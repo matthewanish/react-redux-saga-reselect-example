@@ -1,5 +1,5 @@
 import { ActionType, createAsyncAction } from "typesafe-actions";
-import { SignInPayload } from "../../types/auth.types";
+import { SignInPayload } from "../../core/types/auth.types";
 
 export enum AuthTypes {
   Login = "[AuthTypes] Login",

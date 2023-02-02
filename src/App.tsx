@@ -1,7 +1,9 @@
 import { Provider } from "react-redux";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import { AuthPaths, DashboardPaths } from "./constants/paths.constants";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { AuthPaths } from "./core/constants/paths.constants";
+import ExampleWithSwitch from "./pages/ExampleWithSwitch/ExampleWithSwith";
 import { SignInPage } from "./pages/SignIn";
+import { SignInStatePage } from "./pages/SignInState";
 import { store } from "./store";
 
 export const AppRoutes = () => {
@@ -9,9 +11,8 @@ export const AppRoutes = () => {
     <BrowserRouter>
       <Routes>
         <Route path={AuthPaths.Auth}>
-          <Route path={AuthPaths.SignIn} element={<SignInPage />} />
+          <Route path={AuthPaths.SignIn} element={<ExampleWithSwitch />} />
         </Route>
-        <Route path="*" element={<Navigate to={DashboardPaths.Dashboard} />} />
       </Routes>
     </BrowserRouter>
   );

@@ -6,7 +6,7 @@ import {
   SagaReturnType,
 } from "redux-saga/effects";
 import { ActionType } from "typesafe-actions";
-import { loginRequest } from "../../services/auth.services";
+import { loginRequest } from "../../core/services/auth.services";
 import { loginAction } from "../actions/auth.action";
 
 export class AuthSagaWorker {
