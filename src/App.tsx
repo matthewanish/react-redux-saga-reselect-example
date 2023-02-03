@@ -11,7 +11,7 @@ export const AppRoutes = () => {
     <BrowserRouter>
       <Routes>
         <Route path={AuthPaths.Auth}>
-          <Route path={AuthPaths.SignIn} element={<ExampleWithSwitch />} />
+          <Route path={AuthPaths.SignIn} element={<SignInPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
